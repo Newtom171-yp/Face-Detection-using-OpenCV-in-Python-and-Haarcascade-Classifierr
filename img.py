@@ -2,13 +2,13 @@
 import cv2
 
 # Loading classifier
-face_cascade = cv2.CascadeClassifier('D:/py4e/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('PATH of haarcascade_frontalface_default.xml')
 
 # Loading testing image
-img = cv2.imread('D:/py4e/gp1.jpg')
+img = cv2.imread('PATH of Input Image')
 
 # Converting into gray scale image
-gray = cv2.imread('D:/py4e/gp1.jpg',0)
+gray = cv2.imread('Path of Input Image',0)
 
 # Setting parameters
 faces = face_cascade.detectMultiScale(gray, 1.1, 4)
